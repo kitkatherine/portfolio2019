@@ -1,0 +1,72 @@
+a {
+color: @purple;
+text-decoration: none;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+transition: all 0.3s ease;
+font-weight: @font-weight-1;
+}
+a:hover {
+color: @pink;
+text-decoration: none;
+}
+.button{
+background: transparent;
+border-bottom: 3px solid @teal;
+color: @teal;
+z-index: 99;
+font-family: @font-family-base;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1em;
+margin-top: 0;
+display: inline-block;
+line-height: 1;
+padding: 15px 15px;
+position: relative;
+text-decoration: none;
+-moz-transition: all 0.3s ease 0s;
+-webkit-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+}
+.button.large{
+    font-size:1.2em; 
+}
+.button:hover,
+.button.pink:hover {
+color: #ffffff;
+cursor:pointer;
+}
+.button:before {
+content: "";
+position: absolute;
+background: @teal;
+bottom: 0;
+left: 0;
+right: 0;
+top: 100%;
+z-index: -1;
+-webkit-transition: top 0.09s ease-in;
+}
+.button:hover:before{
+top: 0;
+}
+.button.pink {
+color: @pink;
+border-color: @pink;
+}
+.button.pink:before {
+background: @pink;
+}
+.button.white {
+color: #ffffff;
+border-color: #ffffff;
+}
+.button.white:hover{
+color: @black;
+cursor:pointer;
+}
+.button.white:before {
+background: #ffffff;
+}

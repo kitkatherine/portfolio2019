@@ -1,0 +1,67 @@
+figure {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure figcaption::before,
+figure figcaption::after {
+  pointer-events: none;
+}
+figure.hoverEffect {
+  background: rgba(0, 0, 0, 0.1);
+}
+figure.hoverEffect figcaption {
+  padding: 3em;
+  background-color: rgba(58, 52, 42, 0.7);
+  -webkit-transition: background-color 0.35s;
+  transition: background-color 0.35s;
+}
+figure.hoverEffect figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: '';
+}
+figure.hoverEffect h2 {
+  margin: 20% 0 10px 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+figure.hoverEffect figcaption::before,
+figure.hoverEffect p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+figure.hoverEffect:hover h2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.hoverEffect:hover figcaption::before,
+figure.hoverEffect:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+figure.hoverEffect:hover figcaption {
+  background-color: rgba(58, 52, 42, 0);
+}
+/*# sourceMappingURL=hoverEffect.css.map */

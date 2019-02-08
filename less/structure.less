@@ -1,0 +1,214 @@
+#hero {
+    width: 100%;
+    background: @teal-dark;
+    position: relative;
+    
+    #heroNav {
+        width: 100%;
+        
+        .heroNavMenu {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 15px;
+                text-transform: uppercase;
+                color: @white;
+                font-size: @font-size-h6;
+                font-weight: @font-weight-1;
+                cursor: pointer;
+
+                a {
+                    color: @white;
+                    font-weight: @font-weight-1;
+
+                    &:hover {
+                        color: @teal-light;
+                    }
+                }
+
+                 &:hover {
+                        color: @teal-light;
+                    }
+            }
+            }
+        }
+    
+    .content {
+        padding: 90px 0 0 0;
+        color: @white;
+        position: relative;
+        z-index:100;
+        
+        .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+        .item-2 {
+        grid-column-start: 3;
+        grid-column-end: 9;
+        padding: 30px;
+            
+            h1 {
+                margin-top: -60px;
+            }
+            
+            h1, h2 {
+                margin-left: -60px;
+            }
+            
+            h2 {
+                margin-bottom: 15px;
+            }
+            
+            h6 {
+                margin-bottom: 15px;
+            }
+    }
+    }
+    
+    .heroImage {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        
+        .content{
+        padding: 0;
+        
+        .item-1 {
+           grid-column-start: 6;
+            grid-column-end: 13; 
+        }
+        }
+    }
+}
+
+
+#trio {
+  background: @white;
+  position: relative;
+  z-index: 1;
+  padding: 30px 0;
+    
+    &:before {
+      background: inherit;
+      top: -25rem;
+      content: '';
+      display: block;
+      height: 45rem;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transform: skewY(-15deg);
+      transform-origin: 100%;
+      z-index: -1;
+    }
+    
+    .content {
+        position: relative;
+        z-index:200;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        
+        div {
+          position: relative;
+        }
+
+        .feature {
+          padding: 20px 10px 20px 0;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        .purple {
+          fill: @teal-dark;
+        }
+        .icon {
+          max-width: 100px;
+          display: inline-block;
+          vertical-align: bottom;
+        }
+        .label{
+            text-transform: uppercase;
+            line-height: 1.2;
+            font-weight: 600;
+          padding: 10px 0 0 10px;
+          display: inline-block;
+          vertical-align: bottom;
+            color: @teal-dark;
+            h4 {
+            font-weight: 600;
+            }
+
+        }
+        .active {
+          display: block;
+        }
+        .inactive {
+          display: none;
+          position: absolute;
+        }
+
+        a {
+          display: block;
+          color: @pink;
+          margin-top: 10px;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin: 5px 5px 0 25px;
+            columns: 2;
+              -webkit-columns: 2;
+              -moz-columns: 2;
+            li{
+                padding: 0 10px 0 0;
+            }
+        }
+
+    }
+}
+
+#work {
+    background: @off-white;
+    .content {
+        z-index: 200;
+        position: relative; 
+        color: @gray;
+        .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 8;
+
+    }
+        .item-2 {
+        grid-column-start: 8;
+        grid-column-end: 13;
+        padding: 30px;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+        
+        .item-3 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+            padding: 30px;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+            text-align: right;
+
+    }
+        .item-4 {
+        grid-column-start: 6;
+        grid-column-end: 13;
+    }
+    }
+}

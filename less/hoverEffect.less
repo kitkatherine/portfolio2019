@@ -1,0 +1,58 @@
+figure {
+	overflow: hidden;
+	height: 100%;
+    width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+
+figure.hoverEffect {
+	background: rgba(0,0,0,0.3); 
+}
+
+#mainGrid .item:not(:first-child):hover {
+    filter: grayscale(85%);
+}
+
+figure.hoverEffect figcaption {
+	padding: 2em;
+	text-align: center;
+}
+
+figure.hoverEffect h3 {
+    font-size: 2.25em;
+    position: relative;
+    top: 2em;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+figure.hoverEffect:hover h3 {
+    top: 1em;
+}
+
+figure.hoverEffect p {
+	opacity: 0;
+	-webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+	transition: opacity 0.45s, transform 0.45s;
+	-webkit-transform: translate3d(0,5em,0);
+	transform: translate3d(0,5em,0);
+}
+
+figure.hoverEffect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,2.2em,0);
+	transform: translate3d(0,2.2em,0);
+}

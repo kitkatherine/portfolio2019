@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, figure,
+section {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+background: transparent;
+}
+h1, h2, h3, h4, h5, h6, p { margin: 0;}
+img, fieldset {
+border: 0;
+}
+img {
+  margin: 0 0 0 0;
+  border: none;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+table {
+border-collapse: separate;
+border-spacing: 0;
+}
+caption, th, td {
+text-align: left;
+font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+display: block;
+}
+ul, ol {
+list-style: none;
+}
+.clear:before,
+.clear:after {
+content: "\0020";
+display: block;
+height: 0;
+overflow: hidden;
+}
+.clear:after {
+clear: both;
+}
+.clear {
+zoom: 1;
+}
+.clr { clear:both; float:none; }
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	text-align: left;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;    
+    font-family: @font-family-base;
+    font-size: @font-size-base-px;
+	color: @font-color-base;
+    font-weight: @font-weight-base;
+}
+
+body {
+  background: @white;
+  font-size: @font-size-base-em;
+  line-height: @line-height-base;
+  word-wrap: break-word;
+ -webkit-backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.content {
+display: grid;
+width: 1400px;
+margin: 0 auto;
+grid-template-columns: repeat(12, 1fr);
+grid-column-gap: 15px;
+}
+.imgContainer {
+    position: relative;
+    img {
+          height: auto;
+          width: auto;
+          max-width: 100%;
+        }
+    .layer0 {
+         position: relative;
+          top: 0;
+          left: 0;
+          z-index: 0;
+
+    }
+    .layer1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index:1;
+    }
+}
+h1 {
+    font-family: @font-family-base;
+    font-size: @font-size-h1;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: @font-family-base;
+    font-size: @font-size-h2;
+    font-weight: @font-weight-1;
+}
+
+h3 {
+    font-family: @font-family-secondary;
+    font-size: @font-size-h3;
+    line-height: 0.8;
+}
+
+h4 {
+    font-family: @font-family-base;
+    font-size: @font-size-h4;
+    font-weight: @font-weight-1;
+}
+
+h5 {
+    font-family: @font-family-base;
+    font-size: @font-size-h5;
+    font-weight: @font-weight-1;
+}
+
+h6 {
+    font-family: @font-family-base;
+    font-size: @font-size-h6;
+    font-weight: @font-weight-1;
+}
+
+h6.hero {
+    font-size: 1em;
+    color: @teal-light;
+}
+
+p {
+    padding: 0;
+}
+/*RESIZE FONTS FOR MEDIUM SCREEN SIZES*/
+@media screen and (max-width: 1100px) {
+    html {font-size: @font-size-base-px-md;}
+}
+/*RESIZE FONTS FOR SMALL SCREEN SIZES*/
+@media screen and (max-width: 800px) {
+html {font-size: @font-size-base-px-sm;}
+}
+/*RESIZE FONTS FOR EXTRA SMALL SCREEN SIZES*/
+@media screen and (max-width: 600px) {
+html {font-size: @font-size-base-px-xs;}
+}
