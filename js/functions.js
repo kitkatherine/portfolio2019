@@ -59,132 +59,72 @@ $('.back3').on({
 		}
  });
     
+$(".contact").click(function(){
+  $("#contact").slideToggle();
+});
     
+$(".contactClose").click(function(){
+  $("#contact").slideToggle();
+});
     
-     
-  $(".item-5").click(function(){
-  $("#fpl").slideToggle();
-  });
-    
-  $(".fplClose").click(function(){
-  $("#fpl").slideToggle();
-  });
-    
-  $(".fplPrevious").click(function(){
-  $("#fpl").hide();
-  $("#centermark").show();
-  });
-    
-  $(".fplNext").click(function(){
-  $("#fpl").hide();
-  $("#salesforce").show();
-  });
-    
-  $(".item-3").click(function(){
-  $("#salesforce").slideToggle();
-  });
-    
-  $(".salesforceClose").click(function(){
-  $("#salesforce").slideToggle();
-  });
-    
-  $(".salesforcePrevious").click(function(){
-  $("#salesforce").hide();
-  $("#fpl").show();
-  });
-    
-  $(".salesforceNext").click(function(){
-  $("#salesforce").hide();
-  $("#cmi").show();
-  });
+var circles;
+    circles = $('.circle:not(.center)');
+$(document).ready(function () {
 
-  $(".item-4").click(function(){
-  $("#cmi").slideToggle();
-  });
     
-  $(".cmiClose").click(function(){
-  $("#cmi").slideToggle();
-  });
     
-  $(".cmiPrevious").click(function(){
-  $("#cmi").hide();
-  $("#salesforce").show();
-  });
+
+
+    $('.person_image').mouseenter(function(){
+        circles.removeClass('slidein');
+            //console.log( "ready!" );
+    var circlesize = 0;
+    circlesize = $('.circle-container').width();
+    var rot = 42.5; /* Starting point and Rotation angle for the current item */
+    var spread = 120;
+    var angle = spread / circles.length; /* Angle between two items */
+    var vCSS;
+        circles.each(function (index, el) {
+            //Transform position around the circle
+            vCSS = "rotate(" + rot + "deg) translate(" + circlesize / 2 + "px) rotate(-" + rot + "deg)";
+            $(el).css({
+                'transform': vCSS
+            });
+            rot = rot + angle; /* Increments the rotation variable for next item */
+            //Animation Delay
+            //vCSS = parseInt(index / 10, 2) + "." + index % 10 + "s";
+            vCSS = "0." + index % 20 + "s";
+            $(el).css({
+                'animation-delay': vCSS
+            });
+            //$('#debug').append('<p>' + vCSS + '</p>');
+            $(el).css({'opacity':'0'});
+            $(el).addClass('slideout');
+        });
+    });
+
+
+
+
+    $('.circle_icons_wrapper').mouseleave(function(){
+        //circles.removeClass('slideout');
+          //circles.css({'animation-delay': 0});
+        circles.css({'opacity': 1});
+          circles.each(function (index, el) {
+                //
+                $(el).addClass('slidein');
+                //circles.css({'transform':'all 1s'});
+                //circles.css({'transform':'rotate(0deg) translate(0px)'});
+          });
+    });
     
-  $(".cmiNext").click(function(){
-  $("#cmi").hide();
-  $("#home231").show();
-  });
     
-  $(".fplopen").click(function(){
-  $("#home231").slideToggle();
-  });
     
-  $(".home231Close").click(function(){
-  $("#home231").slideToggle();
-  });
     
-  $(".home231Previous").click(function(){
-  $("#home231").hide();
-  $("#cmi").show();
-  });
     
-  $(".home231Next").click(function(){
-  $("#home231").hide();
-  $("#orbitz").show();
-  });
     
-  $(".item-6").click(function(){
-  $("#orbitz").slideToggle();
-  });
     
-  $(".orbitzClose").click(function(){
-  $("#orbitz").slideToggle();
-  });
-    
-  $(".orbitzPrevious").click(function(){
-  $("#orbitz").hide();
-  $("#home231").show();
-  });
-    
-  $(".orbitzNext").click(function(){
-  $("#orbitz").hide();
-  $("#centermark").show();
-  });
-    
-  $(".item-7").click(function(){
-  $("#centermark").slideToggle();
-  });
-    
-  $(".centermarkClose").click(function(){
-  $("#centermark").slideToggle();
-  });
-    
-  $(".centermarkPrevious").click(function(){
-  $("#centermark").hide();
-  $("#orbitz").show();
-  });
-    
-  $(".centermarkNext").click(function(){
-  $("#centermark").hide();
-  $("#fpl").show();
-  });
-    
-  $(".about").click(function(){
-  $("#about").slideToggle();
-  });
-    
-  $(".aboutClose").click(function(){
-  $("#about").slideToggle();
-  });
-    
-  $(".contact").click(function(){
-  $("#contact").slideToggle();
-  });
-    
-  $(".contactClose").click(function(){
-  $("#contact").slideToggle();
-  });
+ });
 		
 	$('a').smoothScroll();
 	

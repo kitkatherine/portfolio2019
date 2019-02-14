@@ -44,6 +44,23 @@
 
 /*General Animations - Can Repurpose*/
 
+@-webkit-keyframes spin {
+	from {
+    transform: rotateY(0);
+    -o-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+		-webkit-transform: rotateY(0);
+	}
+	to {
+    transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+		-webkit-transform: rotateY(-360deg);
+	}
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -67,6 +84,25 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+@keyframes slideout {
+  from {
+    opacity: 0;
+    transform: rotate(0deg) translate(0px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) translate(0px);
+  }
 }
 
 /*Skills Icon Animations*/

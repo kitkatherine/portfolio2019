@@ -27,7 +27,7 @@
 	
 <!-- STYLISH STUFF -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="css/all.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
@@ -36,7 +36,7 @@
 <script src="js/functions.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/jquery-smooth-scroll-min.js"></script>
 
 <!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60400608-1"></script>
@@ -50,16 +50,15 @@
 
 </head>
 
-<body>
-    
+<body>  
 <section id="hero">
     <nav id="heroNav">
                 <ul class="heroNavMenu">
-                    <li class="about">About</li>
+                    <li class="about"><a href="#about">About</a></li>
                     <li class="contact">Contact</li>
                     <li class="logo"><a href="#"><img src="images/muchadoo.svg" width="100px" height="32.9px"/></a></li>
-                    <li class="work">Work</li>
-                    <li class="resume">Resume</li>
+                    <li class="work"><a href="#work">Work</a></li>
+                    <li class="writing"><a href="#writing">Writing</a></li>
                 </ul>
     </nav>
     
@@ -71,7 +70,7 @@
             <h1 class="ml3">I LIKE UX</h1>
             <h2 class="ml3">AND I CANNOT LIE</h2>
             <div class="animated delay-2s fadeIn">
-                <h6>I’m Katherine, a designer and developer who enjoys creating bold, user-focused experiences. With over 10 years of design and development experience, I’m a unicorn designer and have the hair to go along with it.</h6>
+                <h5>I’m Katherine, a designer and developer who enjoys creating bold, user-focused experiences. With over 10 years of design and development experience, I’m a unicorn designer and have the hair to go along with it.</h5>
                 <a class="button white large" href="#work">Jump On It</a>
             </div>
         </div>
@@ -88,7 +87,7 @@
     </div>
 </section>
     
-<section id="trio">
+<section id="trio" class="angle">
     <div class="content">
         <div class="item">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="purple icon" viewBox="0 0 94.1 94.1" style="enable-background:new 0 0 94.1 94.1;" xml:space="preserve">
@@ -264,28 +263,174 @@
     <div class="content">
         <div class="item item-1">
             <div class="imgContainer">
-                <img src="images/work_salesforce_guide.png"/>
+                <img class="layer0" src="images/work_salesforce_guide.png"/>
+                <img class="layer1 girl1" src="images/work_girl1.svg"/>
             </div>
         </div>
         <div class="item item-2">
             <div>
-                <h4>UI/UX DESIGN + FRONT-END DEVELOPMENT</h4>
+                <h4>UI/UX Design + Front-End Development</h4>
                 <h2>Product Tour &amp; Trailblazer Guide</h2>
-                <a class="button pink">Read More</a>
+                <a class="button pink" href="salesforce.html">Read More</a>
                 </div>
         </div>
         <div class="item item-3">
             <div>
-                <h4>UI/UX DESIGN + FRONT-END DEVELOPMENT</h4>
+                <h4>UI/UX Design + Front-End Development</h4>
                 <h2>Work Predictor Tool</h2>
-                <a class="button pink">Read More</a>
+                <a class="button pink" href="uneau.html">Read More</a>
             </div>
         </div>
         <div class="item item-4">
             <div class="imgContainer">
-                <img src="images/work_une1.png"/>
+                <img class="layer0" src="images/work_une1.png"/>
+                <img class="layer1 girl2" src="images/work_girl2.svg"/>
+                <div class="line"></div>
             </div>
         </div>
+        <div class="item item-5">
+            <div class="imgContainer">
+                <img class="layer0" src="images/work_dhl_usa1.png"/>
+            </div>
+        </div>
+        <div class="item item-6">
+            <div>
+                <h4>Strategy + Visual Design</h4>
+                <h2>DHL International Landing Pages</h2>
+                <a class="button pink" href="dhl.html">Read More</a>
+                </div>
+        </div>
+        <div class="item item-7">
+            <div>
+                <h4>Product Design</h4>
+                <h2>ion Interactive Quick Start Cloud</h2>
+                <a class="button pink" href="quickstartcloud.html">Read More</a>
+            </div>
+        </div>
+        <div class="item item-8">
+            <div class="imgContainer">
+                <img class="layer0"  src="images/work_qsc.png"/>
+                <img class="layer1 girl3" src="images/work_girl3.svg"/>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="writing">
+    <div class="content">
+        <div class="item item-1">
+            <img class="girl" src="images/writing_girl.svg"/>
+        </div>
+        <div class="item item-2">
+            <h4>Design Theory</h4>
+            <h2>Writing Samples</h2>
+            
+            <div class="subcontent">
+                <div class="item item-1">
+                    <div>
+                        <h6>Blog</h6>
+                        <h5>10 Ways to Engage Your Audience with Interactive Content</h5>
+                        <a href="https://blog.marketo.com/2016/04/10-ways-to-engage-your-audience-with-interactive-content.html" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="item item-2">
+                    <div>
+                        <h6>eBook</h6>
+                        <h5>The Top 5 Trends To Watch in 2017</h5>
+                        <a href="http://topuxtrends.much-adoo.com/" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="item item-3">
+                    <div>
+                        <h6>Blog</h6>
+                        <h5>A Designer’s Perspective on Web Templates</h5>
+                        <a href="https://www2.ioninteractive.com/blog/a-designers-perspective-on-web-design-templates" target="_blank">Read more</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="about" class="angle">
+    <div class="content">
+        <div class="item item-1">
+        <h4>Experience</h4>
+        <h2>About Katherine</h2>
+        <p>Jack-of-all-trades, Speedy Gonzalez, multihyphenate, pink-haired girl - these are all names I've heard about myself from my superiors and colleagues in my 10 years of design experience. Naturally, I'm a helper, and I aim to create things that make someone's life a little simpler. Combine that with my business acumen, and you'll find I get things done and I get results. I have an understanding of what it takes to get something made and am incredibly detailed in my time-management and control of scope creep. </p>
+            <p>My client list is expansive and extends to almost every industry. From working with small-town politicians to large Fortune 500 companies, I have insight into how organizations and people work differently, and how to find a solution in a plethora of situations. </p>
+            <p>Feel free to get in touch with me about opportunities in design and front-development.</p>
+            <a class="button white" href="mailto:kmuchado@gmail.com?subject=I'm%20Interested%20In%20Working%20With%20You!&body=Hey%20Katherine%2C%0A%0A...Let%20me%20know%20who%20you%20are%20here.">Say Hey</a>
+        </div>
+        <div class="item item-2">
+            <div class="person_circle">
+                <div class="person_circle_wrapper">
+                
+                
+                <div class="person_image absolute">
+                    <div class="circ-item circ-img-1 absolute">
+                    </div>
+                </div>
+                
+                <div class="circle_icons_wrapper">
+                    <div class="circle_icons_track">
+                        <div class='circle-container'>
+                            <a href="https://dribbble.com/kmuchadoo" target="_blank"><div class='circle dribble'><i class="fab fa-dribbble"></i></div></a>
+                            <a href="https://www.linkedin.com/in/muchadoo" target="_blank"><div class='circle linkedin'><i class="fab fa-linkedin"></i></div></a>
+                            <a href="tel:5139190078" target="_blank"><div class='circle phone'><i class="fa fa-phone"></i></div></a>
+                            <a href="https://www.instagram.com/ohaikatherine/" target="_blank"><div class='circle instagram'><i class="fab fa-instagram"></i></div></a>
+                            <a href="https://www.behance.net/muchadoo" target="_blank"><div class='circle twitter'><i class="fab fa-behance"></i></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    
+<section id="footer">
+    <div class="content">
+        <div class="item item-1">
+            &copy;Katherine McAdoo 2019
+        </div>
+        <div class="item item-2">
+            <a class="footerLink" href="/files/KatherineMcAdooResume.pdf" target="_blank">Download Resume</a>
+            <a class="footerLink" href="https://github.com/kitkatherine/portfolio2019" target="_blank">Code on GitHub</a>
+        </div>
+    </div>
+</section>
+    
+<section id="contact">
+    <icon class="close fa fa-times contactClose"></icon>
+    <div class="content">
+    <div class="item item-1">
+        <div>
+                    <h4>contact</h4>
+                    <h2>Please get in touch! I'm always on the lookout for new opportunities.</h3>
+                    <div class="tri-grid">
+                        <div class="item item-1">
+                            <div>
+                        <h6>Phone</h6><Br/>
+                            <h5>513.919.0078</h5>
+                                </div>
+                        </div>
+                        <div class="item item-2">
+                            <div>
+                            <h6>Email</h6><Br/>
+                            <h5>kmuchadoo@gmail.com</h5>
+                            </div>
+                        </div>
+                        <div class="item item-3">
+                            <div>
+                            <h6>LinkedIn</h6><Br/>
+                            <h5><a class="white" href="https://www.linkedin.com/in/muchadoo/" target="_blank">Visit Profile</a></h5>
+                            </div>
+                        </div>
+                        </div>
+                    <a class="button white" href="files/KatherineMcAdooResume.pdf">Download My Resume</a>
+            </div>
+        </div>   
     </div>
 </section>
     
